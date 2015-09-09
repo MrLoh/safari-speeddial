@@ -1,0 +1,17 @@
+{
+  "name": "speeddial",
+  "version": "1.0.0",
+  "description": "Local Speeddial Homepage for Safari",
+  "main": "index.js",
+  "dependencies": {
+    "ddg": "^0.0.3"
+  },
+  "devDependencies": {
+    "ddg": "0.0.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MrLoh",
+  "license": "ISC"
+}

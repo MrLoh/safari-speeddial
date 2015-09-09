@@ -1,0 +1,29 @@
+html, body {
+	background: #CECCCE;
+}
+
+.favorites {
+	list-style-type: none;
+	margin: 0 auto;
+}
+
+.favorites li {
+	display: block;
+	float: left;
+	width: 8em;
+	height: 1em;
+	background: white;
+	padding: 1em 0.5em;
+	margin: 1em;
+	text-align: center;
+}
+
+.favorites a {
+	color: black;
+	text-decoration: none;
+	font-family: sans-serif;
+}
+
+.favorites a:hover {
+	text-decoration: underline;
+}

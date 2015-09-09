@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Speeddial</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<form>
+		<input id="search" type="text">
+		<p>or ⌘ + L</p>
+	</form>
+	<ul class="favorites">
+		<li><a href="https://web.whatsapp.com">Whats App</a></li>
+		<li><a href="https://www.readability.com/reading-list">Readability</a></li>
+		<li><a href="http://flojoto.synology.me:8081/home/">Sick Beard</a></li>
+		<li><a href="http://flojoto.synology.me:6789">NZB Get</a></li>
+		<li><a href="https://dognzb.cr/main.cfm">DOGnzb</a></li>
+		<li><a href="http://127.0.0.1:32400/web/index.html#!/dashboard">Plex</a></li>
+		<li><a href="http://10.0.1.5:5050">CouchPotato</a></li>
+		<li><a href="https://10.0.1.5:5001/webman/index.cgi">NAS</a></li>
+	</ul>
+</body>
+<script type="text/javascript">
+window.onload = function(){
+  var text_input = document.getElementById ('search');
+  text_input.focus ();
+  text_input.select ();
+}
+</script>
+</html>
