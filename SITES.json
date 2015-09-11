@@ -45,7 +45,7 @@ var favorites = [
   },
   {
     name: "Instagram",
-    url: "https://instagram.com/chrislohse/"
+    url: "https://instagram.com/"
   },
   {
     name: "Flickr",
@@ -137,26 +137,26 @@ var favorites = [
   },
   {
     name: "Sick Beard",
-    url: "http://flojoto.synology.me:8081/home/"
+    url: ""
   },
   {
     name: "CouchPotato",
-    url: "http://10.0.1.5:5050"
+    url: ""
   },
   {
     name: "NZBGet",
-    url: "http://flojoto.synology.me:6789"
+    url: ""
   },
   {
     name: "DOGnzb",
-    url: "https://dognzb.cr/main.cfm"
+    url: ""
   },
   {
     name: "Plex",
-    url: "http://127.0.0.1:32400/web/index.html#!/dashboard"
+    url: ""
   },
   {
     name: "Synology",
-    url: "https://10.0.1.5:5001/webman/index.cgi"
+    url: ""
   }
 ];
