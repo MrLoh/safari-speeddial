@@ -1,29 +1,88 @@
 html, body {
-	background: #CECCCE;
+	background: #EDEDED;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
 }
 
-.favorites {
-	list-style-type: none;
-	margin: 0 auto;
-}
-
-.favorites li {
-	display: block;
-	float: left;
-	width: 8em;
-	height: 1em;
-	background: white;
-	padding: 1em 0.5em;
-	margin: 1em;
+.search {
+	position: relative;
+	margin: 3em auto;
+	width: 46em;
+	padding: 0;
 	text-align: center;
 }
 
-.favorites a {
+#qfield {
+	display: block;
+	outline: none;
+	border: none;
+	width: 44em;
+	margin: 0;
+	padding: 0.7em 1em;
+	border-radius: 0.5em;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+	font-family: sans-serif;
+	font-size: 1em;
+}
+
+.shortkey {
+	display: block;
+	margin: 0.5em 0 -1em 0;
+	color: white;
+	font-family: sans-serif;
+	font-size: 0.9em;
+	font-weight: bold;
+	text-shadow: 0 0 3px rgba(0,0,0,0.3);
+}
+
+
+
+.favorites {
+	list-style-type: none;
+	margin: 0;
+	padding: 1em;
+	text-align: center;
+}
+
+.favorites li {
+	position: relative;
+	display: inline-block;
+	width: 10em;
+	height: 7em;
+	padding: 0;
+	margin: 1em;
+}
+
+.favorites li > a {
+	position: absolute;
+	top: 0; left: 0;
+	display: inline-block;
+	width: 9em;
+	height: 6em;
+	padding: 0.5em;
+
+	background: white;
+	border-radius: 0.5em;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+	text-align: center;
 	color: black;
 	text-decoration: none;
 	font-family: sans-serif;
+
+	transition: all 0.3s;
 }
 
-.favorites a:hover {
-	text-decoration: underline;
+.favorites li > a:hover {
+	top: 1px;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.favorites li > a > img {
+	width: 100%;
+	height: 100%;
 }
