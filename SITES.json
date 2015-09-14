@@ -85,7 +85,7 @@ var favorites = [
   },
   {
     name: "Deutsche Bank",
-    url: "https://meine.deutsche-bank.de/trxm/db/init.do?checkCookie"
+    url: "https://meine.deutsche-bank.de/trxm/db/"
   },
   {
     name: "barclaycard",
