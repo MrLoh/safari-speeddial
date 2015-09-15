@@ -17,16 +17,15 @@
 <script src="SITES.json"></script>
 <script>
 	var list = document.getElementById('favorites');
-
 	for (var i in favorites) {
-
+		// add <li>
 		var item = document.createElement('li');
 		list.appendChild(item);
-
+		// add <a href="i.url">
 		var link = document.createElement('a');
 		link.setAttribute('href', favorites[i].url);
 		item.appendChild(link)
-
+		// add <img src="lower_strip(i.name).png" alt="i.name">
 		var icon = document.createElement('img');
 		icon.setAttribute('src', 'icons/'+favorites[i].name.toLowerCase().replace(/\s/g,'')+".png");
 		icon.setAttribute('alt', favorites[i].name);
