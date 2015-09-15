@@ -2,18 +2,35 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Speeddial</title>
+	<title>SPEEDDIAL</title>
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-	<form class="search" action="https://duckduckgo.com/">
-		<input id="qfield" type="text" name="q" onkeydown="if (event.keyCode == 13) { this.form.submit(); }">
+	<form id="search" action="https://duckduckgo.com/">
+		<input type="text" name="q" autofocus onkeydown="if (event.keyCode == 13) { this.form.submit(); }">
 		<span class="shortkey">or ⌘ + L</span>
 	</form>
-	<ul class="favorites" id="flist">
+	<ul id="favorites">
 		<!-- populated via javascript -->
 	</ul>
 </body>
-<script type="text/javascript" src="SITES.json"></script>
-<script type="text/javascript" src="index.js"></script>
+<script src="SITES.json"></script>
+<script>
+	var list = document.getElementById('favorites');
+
+	for (var i in favorites) {
+
+		var item = document.createElement('li');
+		list.appendChild(item);
+
+		var link = document.createElement('a');
+		link.setAttribute('href', favorites[i].url);
+		item.appendChild(link)
+
+		var icon = document.createElement('img');
+		icon.setAttribute('src', 'icons/'+favorites[i].name.toLowerCase().replace(/\s/g,'')+".png");
+		icon.setAttribute('alt', favorites[i].name);
+		link.appendChild(icon)
+	};
+</script>
 </html>
