@@ -82,7 +82,19 @@ html, body {
 	box-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
 
+#favorites li > a {
+	display: -ms-flexbox;
+   	display: -webkit-flex;
+ 	display: flex;
+ 	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
 #favorites li > a > img {
-	width: 100%;
-	height: 100%;
+	max-width: 100%;
+	max-height: 100%;
 }
